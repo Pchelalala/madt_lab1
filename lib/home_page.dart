@@ -2,10 +2,11 @@ import 'package:flutter/material.dart';
 import 'package:madt_lab1/counter.dart';
 import 'package:provider/provider.dart';
 
-class MyHomePage extends StatelessWidget {
+class HomePage extends StatelessWidget {
   final String title;
   final ValueNotifier<ThemeMode> _notifier = ValueNotifier(ThemeMode.light);
-  MyHomePage({required this.title});
+
+  HomePage({Key? key, required this.title}) : super(key: key);
 
   void _incrementCounter(BuildContext context) {
     Provider.of<Counter>(context, listen: false).incrementCounter();
