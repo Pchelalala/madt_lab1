@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:madt_lab1/counter.dart';
+import 'package:madt_lab1/counter_model.dart';
 import 'package:provider/provider.dart';
 
 class HomePage extends StatelessWidget {
